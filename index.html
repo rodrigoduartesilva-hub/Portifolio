@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b96560fb3b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
+    <title>Rodrigo Duarte</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img id="img" src="logo_rds.jpg" alt="logo_rds" class="logo" width="130rem" height="100rem">
+        </div>
+        <ul>
+            <li>
+                <a href="https://github.com/rodrigoduartesilva-hub/" title="GitHub" target="_blank">Github</a>
+            </li>
+            <li>
+                <a href="mailto:rodrigoduartesilva@outlook.com" title="Email" target="_blank">Email</a>
+            </li>
+            <li>
+                <a href="https://wa.me/5511991989033" title="WhatsApp" target="_blank">WhatsApp</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/rodrigo-duarte-silva/" title="Linkedin" target="_blank">Linkedin</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Rodrigo Duarte Silva</h1>
+                <h5>Web Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Olá, meu nome é Rodrigo, sou desenvolvedor web de São Paulo formado pela Gama Academy
+                </p>
+            </div>
+
+            <div class="form">
+                <form action="">
+                    <p>Deixe seu contato!</p>
+                    <input type="text" placeholder="Seu contato!">
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
